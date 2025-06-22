@@ -1,214 +1,153 @@
+\pdfoutput=1
 \documentclass{article}
 
 \usepackage{arxiv}
 
-\usepackage[utf8]{inputenc} % allow utf-8 input
-\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
-\usepackage{hyperref}       % hyperlinks
-\usepackage{url}            % simple URL typesetting
-\usepackage{booktabs}       % professional-quality tables
-\usepackage{amsfonts}       % blackboard math symbols
-\usepackage{nicefrac}       % compact symbols for 1/2, etc.
-\usepackage{microtype}      % microtypography
-\usepackage{cleveref}       % smart cross-referencing
-\usepackage{lipsum}         % Can be removed after putting your text content
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{amsfonts}
+\usepackage{nicefrac}
+\usepackage{microtype}
+\usepackage{cleveref}
 \usepackage{graphicx}
 \usepackage{natbib}
 \usepackage{doi}
 
-\title{A template for the \emph{arxiv} style}
+\title{Comparative Analysis of the EU AI Act and ISO/IEC 42001:2023 in AI Governance}
 
-% Here you can change the date presented in the paper title
-%\date{September 9, 1985}
-% Or remove it
-%\date{}
+\author{Mariano Millañanco\thanks{Contacto: mariano.millananco@gmail.com}\\
+Universidad de Alcalá (UAH)\\
+Spain\\
+\texttt{mariano.millananco@gmail.com}}
 
-\newif\ifuniqueAffiliation
-% Comment to use multiple affiliations variant of author block 
-\uniqueAffiliationtrue
-
-\ifuniqueAffiliation % Standard variant of author block
-\author{ \href{https://orcid.org/0000-0000-0000-0000}{\includegraphics[scale=0.06]{orcid.pdf}\hspace{1mm}David S.~Hippocampus}\thanks{Use footnote for providing further
-		information about author (webpage, alternative
-		address)---\emph{not} for acknowledging funding agencies.} \\
-	Department of Computer Science\\
-	Cranberry-Lemon University\\
-	Pittsburgh, PA 15213 \\
-	\texttt{hippo@cs.cranberry-lemon.edu} \\
-	%% examples of more authors
-	\And
-	\href{https://orcid.org/0000-0000-0000-0000}{\includegraphics[scale=0.06]{orcid.pdf}\hspace{1mm}Elias D.~Striatum} \\
-	Department of Electrical Engineering\\
-	Mount-Sheikh University\\
-	Santa Narimana, Levand \\
-	\texttt{stariate@ee.mount-sheikh.edu} \\
-	%% \AND
-	%% Coauthor \\
-	%% Affiliation \\
-	%% Address \\
-	%% \texttt{email} \\
-	%% \And
-	%% Coauthor \\
-	%% Affiliation \\
-	%% Address \\
-	%% \texttt{email} \\
-	%% \And
-	%% Coauthor \\
-	%% Affiliation \\
-	%% Address \\
-	%% \texttt{email} \\
-}
-\else
-% Multiple affiliations variant of author block
-\usepackage{authblk}
-\renewcommand\Authfont{\bfseries}
-\setlength{\affilsep}{0em}
-% box is needed for correct spacing with authblk
-\newbox{\orcid}\sbox{\orcid}{\includegraphics[scale=0.06]{orcid.pdf}} 
-\author[1]{%
-	\href{https://orcid.org/0000-0000-0000-0000}{\usebox{\orcid}\hspace{1mm}David S.~Hippocampus\thanks{\texttt{hippo@cs.cranberry-lemon.edu}}}%
-}
-\author[1,2]{%
-	\href{https://orcid.org/0000-0000-0000-0000}{\usebox{\orcid}\hspace{1mm}Elias D.~Striatum\thanks{\texttt{stariate@ee.mount-sheikh.edu}}}%
-}
-\affil[1]{Department of Computer Science, Cranberry-Lemon University, Pittsburgh, PA 15213}
-\affil[2]{Department of Electrical Engineering, Mount-Sheikh University, Santa Narimana, Levand}
-\fi
-
-% Uncomment to override  the `A preprint' in the header
-%\renewcommand{\headeright}{Technical Report}
-%\renewcommand{\undertitle}{Technical Report}
-\renewcommand{\shorttitle}{\textit{arXiv} Template}
-
-%%% Add PDF metadata to help others organize their library
-%%% Once the PDF is generated, you can check the metadata with
-%%% $ pdfinfo template.pdf
 \hypersetup{
-pdftitle={A template for the arxiv style},
-pdfsubject={q-bio.NC, q-bio.QM},
-pdfauthor={David S.~Hippocampus, Elias D.~Striatum},
-pdfkeywords={First keyword, Second keyword, More},
+  pdftitle={Comparative Analysis of the EU AI Act and ISO/IEC 42001:2023 in AI Governance},
+  pdfauthor={Mariano Millañanco},
+  pdfkeywords={AI governance, EU AI Act, ISO 42001, generative AI, ethics},
 }
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-	\lipsum[1]
+The European Union’s Artificial Intelligence Act (EU AI Act) and the international standard ISO/IEC 42001:2023 represent two cornerstone frameworks for AI governance. This paper provides a comprehensive comparison of their principles and obligations, with special attention to the ethical deployment and oversight of generative AI systems across jurisdictions. We outline how the EU AI Act – a binding regulatory regime – and ISO 42001 – a voluntary AI management system standard – converge on key goals such as risk management, transparency, fairness and accountability. Both frameworks seek to ensure AI systems are developed and used in a human-centric, trustworthy manner. However, important differences emerge: the EU AI Act imposes specific legal requirements (and prohibitions) enforceable in EU law, while ISO 42001 offers broad organizational governance processes that can be adapted globally. We analyse areas of alignment and potential conflict, particularly in governing large generative models (e.g.\ large language models and image generators) across multiple jurisdictions. Several case studies illustrate the real-world compliance challenges for generative AI providers and deployers. Based on the comparative findings, we propose a taxonomy of enforceable obligations that combines both frameworks, and we offer recommendations to bridge gaps – legally and technically – to harmonize AI governance internationally. The analysis underscores that while the EU AI Act and ISO 42001 share a common ethical vision, coordinated efforts are needed to reconcile their differences and support organizations in responsibly deploying generative AI worldwide.
 \end{abstract}
 
+\keywords{AI governance \and EU AI Act \and ISO 42001 \and generative AI \and comparative analysis}
 
-% keywords can be removed
-\keywords{First keyword \and Second keyword \and More}
-
-
+%=========================== INTRODUCTION ===========================%
 \section{Introduction}
-\lipsum[2]
-\lipsum[3]
+The rapid advancement of artificial intelligence (AI) – especially \emph{generative AI} like large language models and image generators – has prompted urgent calls for robust governance. Policymakers and standards bodies are converging on frameworks to ensure AI systems are ethical, safe and respect fundamental rights across their life cycle. In Europe, this effort has culminated in the EU Artificial Intelligence Act (hereafter “AI Act”), a landmark regulation that introduces binding rules on AI systems placed on the EU market. Simultaneously, at the international level, the ISO/IEC 42001:2023 standard (Artificial intelligence management system) has emerged as a comprehensive AI governance and risk management framework that organizations can voluntarily adopt. Both the EU AI Act and ISO 42001 aim to foster trustworthy AI, but they approach this goal from different angles – one as hard law, the other as a management standard.
 
+As AI systems (and especially generative models) are often developed and deployed across multiple jurisdictions, understanding the interplay between regulatory obligations and voluntary standards is critically important. Harmonized AI governance can reduce compliance fragmentation and promote responsible innovation globally. However, misalignment between frameworks could create conflicts or compliance gaps for organizations operating internationally. For example, a company deploying a generative AI chatbot in both the EU and other regions must navigate the EU AI Act’s legal mandates alongside any industry best practices or certifications like ISO 42001.
 
-\section{Headings: first level}
-\label{sec:headings}
+This paper examines how the EU AI Act and ISO/IEC 42001:2023 align or diverge in their treatment of AI governance, with emphasis on the ethical principles (fairness, human agency, non-maleficence, justice) and oversight mechanisms relevant to generative AI. The discussion proceeds as follows: (i) methodology, (ii) comparative analysis of key provisions, (iii) operationalization of ethical principles, (iv) case studies, (v) a taxonomy of enforceable obligations and (vi) recommendations for bridging gaps.
 
-\lipsum[4] See Section \ref{sec:headings}.
+%=========================== METHODOLOGY ============================%
+\section{Methodology}
+This research employs a comparative qualitative analysis of the EU AI Act and ISO/IEC 42001:2023, based on a review of official texts and authoritative commentaries. The EU AI Act is analysed through its final legal text (Regulation (EU) 2024/1689) and related explanatory documents. ISO/IEC 42001:2023 is examined via its published standard requirements and publicly available summaries. The comparative approach is structured around five key dimensions: (1) governance structures and accountability, (2) risk management processes, (3) transparency and documentation, (4) technical robustness and safety, and (5) ethical principles and human-centric considerations. Case studies of generative AI deployments complement the document analysis.
 
-\subsection{Headings: second level}
-\lipsum[5]
-\begin{equation}
-	\xi _{ij}(t)=P(x_{t}=i,x_{t+1}=j|y,v,w;\theta)= {\frac {\alpha _{i}(t)a^{w_t}_{ij}\beta _{j}(t+1)b^{v_{t+1}}_{j}(y_{t+1})}{\sum _{i=1}^{N} \sum _{j=1}^{N} \alpha _{i}(t)a^{w_t}_{ij}\beta _{j}(t+1)b^{v_{t+1}}_{j}(y_{t+1})}}
-\end{equation}
+%================== COMPARATIVE OVERVIEW SECTION ===================%
+\section{Comparative Overview of the EU AI Act and ISO/IEC 42001}
+The EU AI Act establishes a risk-based regulatory regime with enforceable obligations, whereas ISO 42001 provides a voluntary management-system framework. Despite this difference, both converge on accountability, risk management, transparency and ethical use. The EU Act is prescriptive and includes prohibitions (e.g.\ social scoring), CE marking and penalties of up to 6\% of global turnover. ISO 42001 sets high-level controls, emphasising leadership commitment, continuous improvement and certification, but lacks legal enforcement. Overlap exists: ISO 42001 can operationalise many AI Act requirements, yet ISO adoption alone does not guarantee compliance with the EU law’s formalities.
 
-\subsubsection{Headings: third level}
-\lipsum[6]
+%================ GOVERNANCE & ACCOUNTABILITY SECTION ==============%
+\section{Governance and Accountability Requirements}
+\subsection{Organizational Structures}
+The EU AI Act obliges providers of high-risk AI to implement a Quality Management System and to assign responsible persons, including an EU representative when applicable. ISO 42001 explicitly requires top-management commitment, an AI policy and defined roles. Thus, ISO extends governance depth, while the AI Act adds legal enforceability.
 
-\paragraph{Paragraph}
-\lipsum[7]
+\subsection{Accountability Mechanisms}
+Both frameworks demand logging and documentation. The AI Act sets a minimum six-month log retention and mandates incident reporting within 15 days. ISO 42001 requires traceability, internal audits and continual improvement but leaves retention periods to organizational context. Combining both ensures comprehensive accountability.
 
+\subsection{Prohibited Practices}
+The AI Act bans certain AI uses outright; ISO 42001 does not list prohibitions, instead expecting compliance with applicable laws. Organizations should incorporate EU bans into their global policies to avoid ethical and legal pitfalls.
 
+%=============== RISK MANAGEMENT & TECHNICAL GOVERNANCE ============%
+\section{Risk Management and Technical Governance}
+The AI Act (Article 9) mandates a continuous risk-management system for high-risk AI; ISO 42001 embeds risk identification, assessment and treatment across all AI. Both call for monitoring and improvement. Technical governance under the Act includes data-quality requirements, accuracy, robustness, cybersecurity and adversarial testing for systemic GPAI models. ISO 42001 provides process-level controls (e.g.\ AI impact assessments, threat modelling, explainability, bias mitigation) that support those requirements globally.
 
-\section{Examples of citations, figures, tables, references}
-\label{sec:others}
+%============= TRANSPARENCY & DOCUMENTATION OBLIGATIONS ============%
+\section{Transparency and Documentation Obligations}
+\subsection{Regulatory Documentation}
+High-risk AI providers must prepare extensive technical documentation per Annex IV of the AI Act. ISO 42001 mandates documented information on AI design, data provenance and decision logic, aligning with the Act’s needs.
 
-\subsection{Citations}
-Citations use \verb+natbib+. The documentation may be found at
-\begin{center}
-	\url{http://mirrors.ctan.org/macros/latex/contrib/natbib/natnotes.pdf}
-\end{center}
+\subsection{User and Public Transparency}
+The AI Act obliges disclosure when users interact with AI or when content is AI-generated. ISO 42001 promotes transparent communication to stakeholders. For generative models, the AI Act requires publishing a summary of training data; ISO underscores data-set documentation as best practice.
 
-Here is an example usage of the two main commands (\verb+citet+ and \verb+citep+): Some people thought a thing \citep{kour2014real, keshet2016prediction} but other people thought something else \citep{kour2014fast}. Many people have speculated that if we knew exactly why \citet{kour2014fast} thought this\dots
+%======= HUMAN OVERSIGHT & ETHICAL PRINCIPLES SECTION ==============%
+\section{Human Oversight and Ethical Principles}
+\subsection{Fairness and Non-Discrimination}
+Both frameworks demand bias mitigation. The AI Act enforces representative data and risk controls; ISO 42001 embeds fairness audits and testing into the AI management system.
 
-\subsection{Figures}
-\lipsum[10]
-See Figure \ref{fig:fig1}. Here is how you add footnotes. \footnote{Sample of the first footnote.}
-\lipsum[11]
+\subsection{Human Agency and Oversight}
+Human oversight is mandatory for high-risk AI under the AI Act. ISO 42001 requires that automated decisions allow human intervention. Implementing explainability mechanisms supports oversight in both regimes.
 
-\begin{figure}
-	\centering
-	\fbox{\rule[-.5cm]{4cm}{4cm} \rule[-.5cm]{4cm}{0cm}}
-	\caption{Sample figure caption.}
-	\label{fig:fig1}
-\end{figure}
+\subsection{Non-Maleficence and Safety}
+The AI Act’s risk-based obligations and prohibitions aim to prevent harm. ISO 42001’s risk-treatment controls and incident-response processes operationalise non-maleficence across all AI applications.
 
-\subsection{Tables}
-See awesome Table~\ref{tab:table}.
+%========================== CASE STUDIES ============================%
+\section{Case Studies: Generative AI Deployments}
+\subsection{LLM in Hiring}
+A multilingual enterprise uses an LLM for candidate screening. Classified as high-risk under the AI Act, it must undergo conformity assessment; ISO 42001 provides bias-audit processes that facilitate compliance.
 
-The documentation for \verb+booktabs+ (`Publication quality tables in LaTeX') is available from:
-\begin{center}
-	\url{https://www.ctan.org/pkg/booktabs}
-\end{center}
+\subsection{Customer-Service Chatbot}
+The temporary ban of ChatGPT in Italy illustrates how privacy and transparency shortcomings trigger regulatory action. ISO 42001 would have prompted proactive measures (privacy notices, opt-outs), reducing the risk of such bans.
 
+\subsection{Open-Source Diffusion Model}
+Open-source models escape many AI Act obligations unless deemed systemic; ISO 42001 offers voluntary safeguards (ethical licences, dataset transparency) that fill governance gaps.
 
-\begin{table}
-	\caption{Sample table title}
-	\centering
-	\begin{tabular}{lll}
-		\toprule
-		\multicolumn{2}{c}{Part}                   \\
-		\cmidrule(r){1-2}
-		Name     & Description     & Size ($\mu$m) \\
-		\midrule
-		Dendrite & Input terminal  & $\sim$100     \\
-		Axon     & Output terminal & $\sim$10      \\
-		Soma     & Cell body       & up to $10^6$  \\
-		\bottomrule
-	\end{tabular}
-	\label{tab:table}
-\end{table}
+\subsection{Cross-Border GPAI Service}
+A U.S. provider of a foundation-model API can leverage ISO 42001 certification to structure governance and meet Article 55 systemic-model duties, while adding Act-specific steps (EU representative, CE marking).
 
-\subsection{Lists}
+%======================= TAXONOMY SECTION ===========================%
+\section{Taxonomy of Enforceable AI Obligations}
 \begin{itemize}
-	\item Lorem ipsum dolor sit amet
-	\item consectetur adipiscing elit.
-	\item Aliquam dignissim blandit est, in dictum tortor gravida eget. In ac rutrum magna.
+  \item \textbf{Governance and Leadership}: AI policy, defined roles, executive oversight (ISO 42001 Clauses 5–7; EU AI Act QMS).
+  \item \textbf{Risk Management}: continuous risk processes, AI impact assessments, adversarial testing (AI Act Art.~9; ISO 42001 Clause 6).
+  \item \textbf{Data Governance}: representativeness, data cards, copyright policy (AI Act Annex IV \& Art.~53; ISO 42001 Annex A).
+  \item \textbf{Technical Robustness}: accuracy, robustness, cybersecurity, explainability (AI Act Art.~15; ISO 42001 controls).
+  \item \textbf{Transparency}: technical documentation, user disclosures, log retention (AI Act Arts.~13, 52; ISO 42001 Clause 7).
+  \item \textbf{Compliance Assurance}: conformity assessment, incident reporting, internal audits (AI Act Arts.~19, 62; ISO 42001 Clause 9).
 \end{itemize}
 
+%==================== RECOMMENDATIONS SECTION =======================%
+\section{Bridging Gaps and Contradictions: Legal and Technical Recommendations}
+\begin{enumerate}
+  \item Map ISO 42001 controls to AI Act articles; plug gaps (e.g.\ CE marking).
+  \item Use ISO certification as evidence of preparedness; regulators should recognise its value.
+  \item Default to stricter provisions where frameworks diverge (e.g.\ six-month logs, 15-day incident reports).
+  \item Encourage mutual updates: EU implementation guidance should reference ISO; ISO revisions should reflect AI Act practice.
+  \item Establish multidisciplinary AI governance councils within organizations.
+  \item Promote ISO 42001 as an international baseline for emerging regulations.
+  \item Embed combined requirements into supply-chain contracts and procurement.
+  \item Monitor policy and standard evolution to maintain alignment.
+\end{enumerate}
 
+%=========================== CONCLUSION =============================%
+\section{Conclusion}
+The EU AI Act provides regulatory “teeth”, while ISO/IEC 42001 supplies organizational “muscle”. Together they form a coherent path toward lawful, ethical and robust AI. Organizations implementing an ISO 42001-aligned AI management system and mapping it to AI Act obligations can achieve global compliance efficiently, mitigate risks and foster trustworthy AI innovation.
+
+%========================= BIBLIOGRAPHY =============================%
 \bibliographystyle{unsrtnat}
-\bibliography{references}  %%% Uncomment this line and comment out the ``thebibliography'' section below to use the external .bib file (using bibtex) .
 
+%--- Reemplaza este bloque con \bibliography{references} si usas BibTeX.
+\begin{thebibliography}{9}
+\bibitem{euact}
+European Union.
+\newblock \emph{Artificial Intelligence Act (Regulation EU 2024/1689)}, Official Journal L 1689, 2024.
 
-%%% Uncomment this section and comment out the \bibliography{references} line above to use inline references.
-% \begin{thebibliography}{1}
+\bibitem{iso42001}
+International Organization for Standardization.
+\newblock \emph{ISO/IEC 42001:2023 – Artificial intelligence — Management system}, 2023.
 
-% 	\bibitem{kour2014real}
-% 	George Kour and Raid Saabne.
-% 	\newblock Real-time segmentation of on-line handwritten arabic script.
-% 	\newblock In {\em Frontiers in Handwriting Recognition (ICFHR), 2014 14th
-% 			International Conference on}, pages 417--422. IEEE, 2014.
+\bibitem{freshfields}
+Freshfields Bruckhaus Deringer.
+\newblock ``EU AI Act unpacked \#10: ISO 42001 – a tool to achieve AI Act compliance?'' February 2024.
 
-% 	\bibitem{kour2014fast}
-% 	George Kour and Raid Saabne.
-% 	\newblock Fast classification of handwritten on-line arabic characters.
-% 	\newblock In {\em Soft Computing and Pattern Recognition (SoCPaR), 2014 6th
-% 			International Conference of}, pages 312--318. IEEE, 2014.
-
-% 	\bibitem{keshet2016prediction}
-% 	Keshet, Renato, Alina Maor, and George Kour.
-% 	\newblock Prediction-Based, Prioritized Market-Share Insight Extraction.
-% 	\newblock In {\em Advanced Data Mining and Applications (ADMA), 2016 12th International 
-%                       Conference of}, pages 81--94,2016.
-
-% \end{thebibliography}
-
+% Añade aquí las demás fuentes según las necesites
+\end{thebibliography}
 
 \end{document}
